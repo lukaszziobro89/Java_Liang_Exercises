@@ -1,4 +1,5 @@
-package Chapter_07;
+package Chapter_07.other_functions;
+
 public class CountLettersInArray {
     public static void main(String[] args) {
         // declare and create an empty array of characters

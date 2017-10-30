@@ -1,4 +1,4 @@
-package Chapter_07;
+package Chapter_07.other_functions;
 public class RandomCharacter {
     /** Generate a random character between ch1 and ch2 */
     public static char getRandomCharacter(char ch1, char ch2) {

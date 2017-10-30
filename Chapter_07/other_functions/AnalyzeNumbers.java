@@ -1,4 +1,4 @@
-package Chapter_07;
+package Chapter_07.other_functions;
 import java.util.Scanner;
 public class AnalyzeNumbers {
     public static void main(String[] args) {
