@@ -9,7 +9,7 @@ public class Exercise_07 {
 
         // generate random from 1-10 range and increase index
         System.out.print("Random numbers (1-10) range: ");
-        for (int i=1; i <= 10; i++){
+        for (int i=1; i <= 100; i++){
             int randomNum = (int)(Math.random() * 10);
             System.out.print(randomNum + " ");
             counts[randomNum]++;
