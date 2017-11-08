@@ -54,11 +54,13 @@ public class Exercise_03 {
         for (int i = 0; i < grades.length - 1; i++) {
             //find the minimum
             int currentMin = grades[i][1];
+            int studentNumber = grades[i][0];
             int currentMinIndex = i;
 
             for (int j= i + 1; j <= grades.length-1; j++){
                 if (currentMin > grades[j][1]){
                     currentMin = grades[j][1]; // change current min value
+                    studentNumber = grades[j][0];
                     currentMinIndex = j;  // change index of current min value
                 }
             }
@@ -67,7 +69,7 @@ public class Exercise_03 {
             if (currentMinIndex != i){
                 grades[currentMinIndex][0] = grades[i][0];
                 grades[currentMinIndex][1] = grades[i][1];
-                grades[i][0] = currentMinIndex;
+                grades[i][0] = studentNumber;
                 grades[i][1] = currentMin;
             }
         }
