@@ -7,11 +7,12 @@ Use the StackOfIntegers class to store the prime numbers (e.g., 2, 3, 5, ...) an
 public class Exercise_06 {
     public static void main(String[] args) {
 
+        int limit = 120;
         // stack of prime numbers
         StackOfIntegers primeNumbers = new StackOfIntegers(20);
 
         // push all prime numbers < 120 into stack
-        for (int i = 2; i < 120; i++) {
+        for (int i = 2; i < limit; i++) {
             if (isPrime(i)){
                 primeNumbers.push(i);
             }
