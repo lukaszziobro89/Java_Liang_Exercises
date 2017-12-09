@@ -47,6 +47,12 @@ public class Account {
         this.dateCreated = new Date();
     }
 
+    public Account(int id, double balance){
+        this();
+        this.id = id;
+        this.balance = balance;
+    }
+
     // A constructor that creates an account with the specified id and initial balance.
     public Account(int id, double balance, double annualInterestRate){
         this.id = id;
