@@ -13,10 +13,8 @@ For example, the following command converts the Java source-code file Test.java 
 public class Exercise_12 {
     public static void main(String[] args) {
         // create placeholders for files
-        File testFile = new File("C:\\Users\\luq\\Desktop\\test\\Exercise_12.java");
-        File testFile_new = new File("C:\\Users\\luq\\Desktop\\test\\Exercise_12_modified.java");
-//        File testFile = new File(args[0]);
-//        File testFile_new = new File(args[1]);
+        File testFile = new File(args[0]);
+        File testFile_new = new File(args[1]);
         StringBuilder all = new StringBuilder();
         // read all data
         try {
