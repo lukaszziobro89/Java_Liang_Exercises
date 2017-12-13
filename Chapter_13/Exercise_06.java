@@ -1,6 +1,4 @@
 package Chapter_13;
-import Chapter_11.Chapter_Classes.GeometricObject;
-import Chapter_13.Chapter_Classes.AbstractGeometricObject;
 import Chapter_13.Chapter_Classes.ComparableCircle;
 /*
 (The ComparableCircle class) Define a class named ComparableCircle that extends Circle and implements Comparable.
