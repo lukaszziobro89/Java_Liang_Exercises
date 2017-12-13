@@ -1,6 +1,6 @@
 package Chapter_13.Chapter_Classes;
 import java.util.Date;
-public abstract class AbstractGeometricObject {
+public abstract class AbstractGeometricObject implements Comparable<AbstractGeometricObject>{
     // attributes (fields)
     private String color = "white";
     private boolean filled;
@@ -16,6 +16,26 @@ public abstract class AbstractGeometricObject {
         dateCreated = new java.util.Date();
         this.color = color;
         this.filled = filled;
+    }
+
+    @Override
+    public int compareTo(AbstractGeometricObject o) {
+        if (getArea() > o.getArea()){
+            return 1;
+        } else if(getArea() == o.getArea()){
+            return 0;
+        } else {
+            return -1;
+        }
+    }
+
+    /** Returns max from 2 objects using compareTo method (Comparable interface) */
+    public static AbstractGeometricObject max(AbstractGeometricObject o1, AbstractGeometricObject o2){
+        if (o1.compareTo(o2) >= 0){
+            return o1;
+        } else {
+            return o2;
+        }
     }
 
     /** Abstract get area method - different for each subclass */
