@@ -21,6 +21,13 @@ public class ComparableCircle extends Circle2D implements Comparable<ComparableC
         }
     }
 
+    /** Overrided method allows to check if two objects
+     * of ComparableCircle class are equals */
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof ComparableCircle && this.getRadius() == ((ComparableCircle) obj).getRadius());
+    }
+
     /** Returns max from 2 objects using compareTo method (Comparable interface) */
     public static ComparableCircle max(ComparableCircle c1, ComparableCircle c2){
         if (c1.compareTo(c2) >= 0){
